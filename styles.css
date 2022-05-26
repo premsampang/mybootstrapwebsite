@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(#ffffff), rgb(255, 122, 990);
+    }
+footer{
+    clear: both;
+    background-color: rgb(3, 34, 29);
+    color: yellowgreen;
+    padding: 20px;
+    text-align: center;
+}

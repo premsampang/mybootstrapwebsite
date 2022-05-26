@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Bootstrap Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="https://premsampang.github.io/"
+          >My Biography</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Website Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Application Development</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Others</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar end-->
+
+    <!-- Carasoul start-->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/img1.jpeg" class="d-block w-100" alt="images" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="myHead" style="color: red">Mt. Everest</h5>
+            <p id="myPara" style="color: red">
+              The voice of Peace from the top of the World!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/img2.jpeg" class="d-block w-100" alt="images" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="myHead" style="color: wheat">Nature</h5>
+            <p id="myNat" style="color: wheat">
+              Nature speaks through its beauty
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/img3.jpeg" class="d-block w-100" alt="images" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="aristotle" style="color: aqua">Aristotle</h5>
+            <p id="prog" style="color: aqua">
+              The more I know, the more I realize that little I know
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- carasoul end-->
+
+    <!-- Card start-->
+    <h1>My Projects</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/map.png" class="card-img-top" alt="images" />
+          <div class="card-body">
+            <h5 class="card-title">Real-Time-Bus-Tracker</h5>
+            <p class="card-text">
+              This project is intend to track the real time bus stops between
+              Harvard to MIT, in Boston, MA.
+              <a href="https://premsampang.github.io/Real-Time-Bus-Tracker/">
+                Real Time Bus Tracker
+              </a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Prem Rai</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/PacMan1.png" class="card-img-top" alt="images" />
+          <div class="card-body">
+            <h5 class="card-title">Pacmen</h5>
+            <p class="card-text">
+              You can start playing this game by clicking Start Game button and
+              click Add PacMan button, you can add PacMan as many you want.
+              <a href="https://premsampang.github.io/pacmen/"> Pacmen Game</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Prem Rai</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/eye.png" class="card-img-top" alt="images" />
+          <div class="card-body">
+            <h5 class="card-title">Eve Movement</h5>
+            <p class="card-text">
+             As you drag your mouse around, eyebulbs will track the direction of mouse movement.
+             <a href="https://premsampang.github.io/EveMov/">Click and Try</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Prem Rai</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Gallery start-->
+    <section class="main-heading my-5 pt-5">
+      <div class="text-center">
+        <h1>Gallery</h1>
+        <hr class="w-100 max-auto" />
+      </div>
+      <div class="container-fluid my-5">
+        <div class="row">
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img4.png" alt="images" class="img-fluid"
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img5.png" alt="images" class="img-fluid"
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img7.jpeg" alt="images" class="img-fluid"
+            </figure>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img1.jpeg" alt="images" class="img-fluid"
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img3.jpeg" alt="images" class="img-fluid"
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img2.jpeg" alt="images" class="img-fluid"
+            </figure>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img5.png" alt="images" class="img-fluid"
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img6.jpeg" alt="images" class="img-fluid"
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 max-auto">
+            <figure>
+              <img src="images/img7.jpeg" alt="images" class="img-fluid"
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery end-->
+
+    <!-- Contact form start-->
+    <section class="main-heading my-5 pt-5">
+      <div class="text-center">
+        <h1>Contact</h1>
+        <hr class="w-100 max-auto" />
+      </div>
+      <div class="container-fluid">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter your Email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >User Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Comment</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit" />
+      </div>
+    </section>
+
+    <!-- Contact form end-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <p>Copyright &copy; 2022 Prem Rai</p>
+    </footer>
+  </body>
+</html>
